@@ -1,0 +1,150 @@
+:root {
+    --pink-color: rgb(192, 65, 124);
+    --primary-color: rgb(140, 169, 224);
+    --white-color: rgb(235, 235, 235);
+    --gap :60px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+a {
+    color: black;
+}
+
+.main-content {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.header {
+    background-color:var(--primary-color);
+    border-bottom: 0.1rem solid rgb(231, 231, 231);
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding:1rem;
+}
+
+.cabecalho nav ul li {
+    padding: 1.8rem;
+}
+
+.cabecalho nav ul li a{
+    color: black;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.cabecalho nav ul li a:hover{
+    color: black;
+    border-bottom: 0.1rem solid rgb(255, 255, 255);
+    padding-right: 0.5rem;
+    
+}
+
+.navecagao-cabecalho {
+    display: flex;
+    list-style: none;
+}
+
+.titulo-principal a {
+    text-decoration: none;
+    font-weight: 400;
+    font-style: italic;
+    transition: all 200ms ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+}
+
+.titulo-principal a:hover {
+    font-size: 6.3rem;
+    text-shadow: -0.3rem -0.3rem 0.3rem black;
+}
+
+.textb{
+    color: rgb(8, 8, 87);
+}
+
+.texta{
+    color: rgb(232, 223, 247);
+}
+
+.pesquisa {
+    background-color: var(--white-color);
+    padding: 0.5rem;
+    border: none;
+    border-radius: none;
+}
+.pesquisa:hover {
+    border: none;
+}
+
+
+.botao-pesquisa{
+    border: none;
+    background-color: var(--white-color);
+    border-top-right-radius:0.8rem;
+    border-bottom-right-radius:0.8rem;
+    transition: all 100ms ease-in-out;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -ms-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+}
+
+.botao-pesquisa:hover{
+    background-color: rgb(199, 199, 199);
+}
+
+.conteudo-inicial {
+    margin-top: 1rem;
+}
+
+.grid-conteudo-principal {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    font-size: 1.6rem;
+    gap: var(--gap);
+}
+
+.imagem-notícia {
+    width: 300px;
+    height: 300px;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+.link-noticia, .link-noticia:active{
+    padding: 0.8rem;
+    border: 0.3rem solid var(--primary-color);
+}
+
+.link-noticia:hover{
+    color: var(--primary-color);
+    border: 0.3rem solid var(--pink-color);
+}
