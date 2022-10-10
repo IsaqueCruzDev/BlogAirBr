@@ -33,8 +33,6 @@ h1 {
 }
 
 h2 {
-    display: flex;
-    justify-content: flex-end;
     font-size: 7rem;
 }
 
@@ -185,6 +183,11 @@ h2 {
 
 .conteudo-inicial {
     margin-top: 3rem;
+}
+
+.titulo-conteudo-inicial {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .grid-conteudo-principal {
