@@ -1,8 +1,9 @@
 :root {
     --pink-color: rgb(192, 65, 124);
-    --primary-color: rgb(140, 169, 224);
-    --white-color: rgb(214, 214, 214);
+    --primary-color: rgb(8, 8, 87);
+    --white-color: rgb(245, 245, 245);
     --gray-color:rgb(204, 204, 204);
+    --orange-color: rgb(221, 108, 42);
     --gap :60px;
 }
 
@@ -20,10 +21,19 @@ html {
 
 body {
     background-color: var(--white-color);
+    font-family: 'Poppins', sans-serif;
 }
 
-a {
-    color: black;
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 7rem;
 }
 
 /* Fim Elementos */
@@ -33,8 +43,14 @@ a {
     margin: 0 auto;
 }
 
+.section {
+    height: 100vh;
+}
+
+/* Fim Classes Padrões */ 
+
 .header {
-    background-color:var(--primary-color);
+    background-color:var(--white-color);
     border-bottom: 0.1rem solid var(--gray-color);
     max-width: 100%;
 }
@@ -43,7 +59,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding:1rem;
 }
 
@@ -63,7 +79,7 @@ a {
 
 .cabecalho nav ul li a:hover{
     color: black;
-    border-bottom: 0.1rem solid rgb(255, 255, 255);
+    border-bottom: 0.1rem solid var(--primary-color);
     padding-right: 0.5rem;
     
 }
@@ -86,8 +102,10 @@ a {
 }
 
 .titulo-principal a {
+    color: var(--primary-color);
+    text-shadow: -0.2rem -0.2rem 0.2rem rgb(53, 49, 49);
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 600;
     font-style: italic;
     transition: all 200ms ease-in-out;
     -webkit-transition: all 200ms ease-in-out;
@@ -96,17 +114,16 @@ a {
     -o-transition: all 200ms ease-in-out;
 }
 
-.titulo-principal a:hover {
-    font-size: 6.3rem;
-    text-shadow: -0.3rem -0.3rem 0.3rem rgb(53, 49, 49);
-}
-
-.text-letras-titulo{
+.text-texto-cabecalho{
     color: rgb(8, 8, 87);
 }
 
 .text-iniciais-titulo{
-    color: rgb(232, 223, 247);
+    color: rgb(221, 108, 42);
+}
+
+.titulo-principal a:hover {
+    font-size: 6.3rem;
 }
 
 .pesquisa {
@@ -115,6 +132,7 @@ a {
     border: none;
     border-radius: none;
 }
+
 .pesquisa:hover {
     border: none;
 }
@@ -136,10 +154,40 @@ a {
     background-color: rgb(199, 199, 199);
 }
 
-/* Fim Cbecalho */
+
+/* Fim Cabecalho */
+
+.home {
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-titulo {
+    font-weight: 600;
+}
+
+.worldmap img{
+    max-width: 100%;
+    height: auto;  
+}
+
+/* Fim Home */
 
 .conteudo-inicial {
-    margin-top: 1rem;
+    margin-top: 3rem;
+}
+
+.titulo-conteudo-inicial {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .grid-conteudo-principal {
@@ -162,12 +210,21 @@ a {
     -o-border-radius: 1.5rem;
 }
 
+.texto-noticia {
+    margin-bottom: 2rem;
+}
+
+.noticia {
+    padding: 1rem;
+}
+
 .link-noticia, .link-noticia:active{
     padding: 0.8rem;
     border: 0.3rem solid var(--primary-color);
 }
 
-.link-noticia:hover{
+.link-noticia:hover{ 
     color: var(--primary-color);
     border: 0.3rem solid var(--pink-color);
 }
+/* Fim Corpo 1 */
