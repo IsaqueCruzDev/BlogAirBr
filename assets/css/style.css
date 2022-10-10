@@ -7,10 +7,7 @@
 }
 
 /* Fim Variáveis */
-<<<<<<< HEAD
-=======
 
->>>>>>> master
 * {
     padding: 0;
     margin: 0;
@@ -106,19 +103,16 @@ a {
     text-shadow: -0.3rem -0.3rem 0.3rem rgb(53, 49, 49);
 }
 
-<<<<<<< HEAD
 .text-texto-cabecalho{
     color: rgb(8, 8, 87);
 }
 
 .text-iniciais-cabecalho{
-=======
-.text-letras-titulo{
     color: rgb(8, 8, 87);
 }
 
 .text-iniciais-titulo{
->>>>>>> master
+
     color: rgb(232, 223, 247);
 }
 
@@ -149,11 +143,8 @@ a {
     background-color: rgb(199, 199, 199);
 }
 
-<<<<<<< HEAD
+
 /* Fim Cabecalho */
-=======
-/* Fim Cbecalho */
->>>>>>> master
 
 .conteudo-inicial {
     margin-top: 1rem;
@@ -187,10 +178,6 @@ a {
 .link-noticia:hover{
     color: var(--primary-color);
     border: 0.3rem solid var(--pink-color);
-<<<<<<< HEAD
-}
+
 
 /* Fim Corpo 1 */
-=======
-}
->>>>>>> master
