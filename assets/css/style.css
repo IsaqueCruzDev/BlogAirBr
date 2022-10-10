@@ -5,6 +5,9 @@
     --gray-color:rgb(204, 204, 204);
     --gap :60px;
 }
+
+/* Fim Variáveis */
+
 * {
     padding: 0;
     margin: 0;
@@ -22,6 +25,8 @@ body {
 a {
     color: black;
 }
+
+/* Fim Elementos */
 
 .main-content {
     width: 120rem;
@@ -96,11 +101,11 @@ a {
     text-shadow: -0.3rem -0.3rem 0.3rem rgb(53, 49, 49);
 }
 
-.textb{
+.text-letras-titulo{
     color: rgb(8, 8, 87);
 }
 
-.texta{
+.text-iniciais-titulo{
     color: rgb(232, 223, 247);
 }
 
@@ -130,6 +135,8 @@ a {
 .botao-pesquisa:hover{
     background-color: rgb(199, 199, 199);
 }
+
+/* Fim Cbecalho */
 
 .conteudo-inicial {
     margin-top: 1rem;
