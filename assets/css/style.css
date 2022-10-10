@@ -5,6 +5,8 @@
     --gray-color:rgb(204, 204, 204);
     --gap :60px;
 }
+
+/* Fim Variáveis */
 * {
     padding: 0;
     margin: 0;
@@ -23,6 +25,8 @@ a {
     color: black;
 }
 
+/* Fim Elementos */
+
 .main-content {
     width: 120rem;
     margin: 0 auto;
@@ -33,6 +37,8 @@ a {
     border-bottom: 0.1rem solid var(--gray-color);
     max-width: 100%;
 }
+
+/* Fim Classes Padrões */
 
 .cabecalho {
     display: flex;
@@ -90,11 +96,11 @@ a {
     text-shadow: -0.3rem -0.3rem 0.3rem black;
 }
 
-.textb{
+.text-texto-cabecalho{
     color: rgb(8, 8, 87);
 }
 
-.texta{
+.text-iniciais-cabecalho{
     color: rgb(232, 223, 247);
 }
 
@@ -124,6 +130,8 @@ a {
 .botao-pesquisa:hover{
     background-color: rgb(199, 199, 199);
 }
+
+/* Fim Cabecalho */
 
 .conteudo-inicial {
     margin-top: 1rem;
@@ -159,27 +167,4 @@ a {
     border: 0.3rem solid var(--pink-color);
 }
 
-@media (max-width:800px) {
-    .main-content {
-        width: none;
-        margin: 0 auto;
-    }
-
-    .cabecalho {
-        display: flex;
-        max-width: 100%;
-    }
-
-    .grid-conteudo-principal {
-    max-width: 300px;
-    display: grid;
-    grid-template-columns: 1fr; 
-    font-size: 1.6rem;
-    }
-
-    .navecagao-cabecalho li a{
-        color: red;
-        display: block;
-        list-style:circle;
-    }
-}
+/* Fim Corpo 1 */
