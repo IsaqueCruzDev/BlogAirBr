@@ -179,6 +179,10 @@ h2 {
     height: auto;  
 }
 
+.barra {
+    color: var(--orange-color);
+}
+
 /* Fim Home */
 
 .conteudo-inicial {
