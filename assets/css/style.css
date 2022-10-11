@@ -2,6 +2,7 @@
     --pink-color: rgb(192, 65, 124);
     --primary-color: rgb(8, 8, 87);
     --white-color: rgb(245, 245, 245);
+    --min-gray :rgb(238, 238, 238);
     --gray-color:rgb(204, 204, 204);
     --orange-color: rgb(221, 108, 42);
     --gap :60px;
@@ -61,7 +62,7 @@ h2 {
 }
 
 .grid-3{
-    width: 1200px;
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: var(--gap);
@@ -87,7 +88,7 @@ h2 {
 }
 
 .cabecalho nav ul li {
-    padding: 1.8rem;
+    padding: 1.5rem;
 }
 
 .cabecalho nav ul li a{
@@ -110,18 +111,6 @@ h2 {
 .navecagao-cabecalho {
     display: flex;
     list-style: none;
-}
-
-.link-cabecalho-1::after {
-    content: '|';
-    position: relative;
-    left: 17px;
-}
-
-.link-cabecalho::after {
-    content: '-';
-    position: relative;
-    left: 17px;
 }
 
 .titulo-principal a {
@@ -149,20 +138,20 @@ h2 {
     font-size: 6.3rem;
 }
 
-.pesquisa {
-    background-color: var(--white-color);
+.input-pesquisa {
+    background-color: var(--min-gray);
     padding: 0.5rem;
-    border: none;
+    border:1px solid gray;
     border-radius: none;
 }
 
-.pesquisa:hover {
+.input-pesquisa:hover {
     border: none;
 }
 
 .botao-pesquisa{
-    border: none;
-    background-color: var(--white-color);
+    border: 1px solid gray;
+    background-color: var(--min-gray);
     border-top-right-radius:0.8rem;
     border-bottom-right-radius:0.8rem;
     transition: all 100ms ease-in-out;
@@ -208,7 +197,7 @@ h2 {
 /* Começo conteudo Inicial */
 
 .conteudo-inicial {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .titulo-conteudo-inicial {
@@ -268,7 +257,8 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: var(--gap);
-
+    max-width: 70rem;
+    text-align: center;
 }
 
     /* HEADER */
@@ -349,14 +339,14 @@ h2 {
     font-size: 6.3rem;
 }
 
-.pesquisa {
-    background-color: var(--white-color);
-    padding: 0.5rem;
-    border: none;
+.input-pesquisa {
+    background-color: var(--min-gray);
+    padding: 8rem;
+    border: red;
     border-radius: none;
 }
 
-.pesquisa:hover {
+.input-pesquisa:hover {
     border: none;
 }
 
@@ -380,7 +370,7 @@ h2 {
 /* FIM CABECALHO */
 
 .home-inicial {
-    margin-bottom: 30rem; 
+    margin-bottom: 2rem; 
 }
 
 .home {
@@ -405,7 +395,7 @@ h2 {
     justify-content: center;
 }
 .worldmap img{
-    max-width: 30%; 
+    max-width: 50%; 
     height: auto; 
     padding-bottom: 5rem; 
 }
@@ -413,12 +403,7 @@ h2 {
 /* Conteudo inicial */
 
 .conteudo-inicial {
-    margin-top: 3rem;
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 1rem;
 }
 
 .titulo-conteudo-inicial {
@@ -426,15 +411,8 @@ h2 {
     justify-content: center;
 }
 
-.noticia {
-    border: 1px solid rgb(27, 160, 22);
-    max-width: 48rem;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1.6rem;
-}
-
 .imagem-notícia {
+    margin: 1rem;
     width: 30rem;
     height: 30rem;
     box-shadow: -0.3rem 0.5rem 0.8rem;
@@ -443,10 +421,20 @@ h2 {
     -moz-border-radius: 1.5rem;
     -ms-border-radius: 1.5rem;
     -o-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
 }
 
 .texto-noticia {
     margin-bottom: 2rem;
+}
+
+.noticia {                          
+    padding: 1rem;
+    font-size: 1.6rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .titulo-noticia {
