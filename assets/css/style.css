@@ -194,6 +194,94 @@ h2 {
 
 /* Fim Home */
 
+/* Começo Página de Cadastro */
+
+.pag-cadastro {
+    grid-column: span ;
+    font-size: 1.8rem;
+    padding-top:3rem;
+}
+
+.cadastro {
+    background-color: rgb(214, 185, 57);
+}
+
+.pag-cadastro legend {
+    font-style: italic;
+    padding: 1rem 0px 1rem 0px;
+}
+
+.pag-cadastro .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group{
+    flex: 1 1 320px;
+    overflow-x: none;  
+}
+
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.form-group input{
+    font-size: 1.8rem;
+    border: 1px solid var(--orange-color);
+    background-color: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    outline: none;
+}
+
+
+.form-group input:focus{
+    box-shadow: 0.2rem 0.2rem 1.5rem var(--secondary-color);
+
+}
+
+.form-group button{
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover{
+    border: 0.5rem solid var(--white-color);
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder{
+    color: var(--primary-color);
+}
+
+/* Fim Página de Cadastro */
+
+/* Começo Login */
+
+.pag-login {
+    margin-top: 6rem;
+}
+
+.titulo-login {
+    margin-bottom: 1.5rem;
+}
+
 /* Começo conteudo Inicial */
 
 .conteudo-inicial {
