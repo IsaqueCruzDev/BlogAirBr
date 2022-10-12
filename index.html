@@ -24,13 +24,17 @@
   </head>
   <body>
     <!--Começo Cabecalho-->
-    <header class="header">
+    <input id="close-menu" class="close-menu" type="checkbox" role="button" aria-label="close menu">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <header class="header menu">
     <div class="cabecalho main-content">
       <h1 class="display-1 titulo-principal">
-        <a href=""><span class="text-iniciais-titulo">B</span><span class="text-letras-titulo">log</span><span class="text-iniciais-titulo">A</span><span class="text-letras-titulo">ir</span></a></h1>
+        <a href=""><span class="text-iniciais-titulo">B</span><span class="text-letras-titulo">log</span><span class="text-iniciais-titulo">A</span><span class="text-letras-titulo">ir</span>
+        </a>
+      </h1>
 
-      <nav>
-        <ul class="navecagao-cabecalho">
+        <nav class="nav-da-ul">
+          <ul class="navegacao-cabecalho">
           <li><a href="" class="link-cabecalho-1 imigracao">Imigração</a></li>
           <li><a href="" class="link-cabecalho-1 noticias">Notícias</a></li>
           <li><a href="" class="link-cabecalho-1 passagens">Passagens</a></li>
@@ -63,9 +67,10 @@
     </section>
 
     <!-- Fim Home -->
-    <section class="section cadastro">
+    
+    <section class="section2 cadastro">
       <div class="pag-cadastro main-content">
-        <h2>Cadastre - se</h2>
+        <h2>Cadastre-se</h2>
         <form id="formulario-cadastro" action="/">
           <fieldset class="form-grid">
           <legend>Cadastre-se JÁ!</legend>
@@ -101,7 +106,7 @@
             </div>
 
             <div class="form-group full-width">
-              <button type="">Finalizar Cadastro
+              <button type="">Finalizar Cadastro</button>
               </div>
           </fieldset>
         </form>
@@ -124,7 +129,7 @@
             </div>
 
             <div class="form-group full-width">
-              <button type="">Logar
+              <button type="">Logar</button>
             </div>
           </fieldset>
           </form>
